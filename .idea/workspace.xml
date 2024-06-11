@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80326de8-2019-4b0a-9f62-789c1fd228e0" name="Changes" comment="initial commit, add connected components function and tests">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fikklish_uft.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disjoint_sets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_disjoint_sets.py" afterDir="false" />
+    <list default="true" id="80326de8-2019-4b0a-9f62-789c1fd228e0" name="Changes" comment="initial commit, add 'connected components' and tests">
+      <change beforePath="$PROJECT_DIR$/.idea/fikklish_uft.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fikklish_uft.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disjoint_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/disjoint_sets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_disjoint_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_disjoint_sets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +18,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/disjoint_sets.log" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2hjWsEomoc9h1FHODjD1LZp3bFq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -36,16 +33,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.pytest for pytest.executor": "Run",
+    "Python tests.pytest for test_disjoint_sets.test_four_triangles.executor": "Run",
     "Python tests.pytest.executor": "Run",
     "Python.pydoc.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/oleg/projects/acaer_bumola",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "configurable.group.tools",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -55,7 +54,7 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest">
+  <component name="RunManager" selected="Python tests.pytest for test_disjoint_sets.test_four_triangles">
     <configuration name="pydoc" type="PythonConfigurationType" factoryName="Python">
       <module name="fikklish_uft" />
       <option name="ENV_FILES" value="" />
@@ -109,6 +108,53 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_disjoint_sets.test_four_triangles" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="fikklish_uft" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="DockerContainerSettingsRunConfigurationExtension">
+        <option name="envVars">
+          <list />
+        </option>
+        <option name="extraHosts">
+          <list />
+        </option>
+        <option name="links">
+          <list />
+        </option>
+        <option name="networkDisabled" value="false" />
+        <option name="networkMode" value="bridge" />
+        <option name="portBindings">
+          <list />
+        </option>
+        <option name="publishAllPorts" value="false" />
+        <option name="runCliOptions" value="--entrypoint= --rm" />
+        <option name="version" value="2" />
+        <option name="volumeBindings">
+          <list>
+            <DockerVolumeBindingImpl>
+              <option name="containerPath" value="/opt/project" />
+              <option name="editable" value="true" />
+              <option name="hostPath" value="$PROJECT_DIR$" />
+              <option name="readOnly" value="false" />
+            </DockerVolumeBindingImpl>
+          </list>
+        </option>
+      </EXTENSION>
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_disjoint_sets.test_four_triangles&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest" type="tests" factoryName="py.test">
       <module name="fikklish_uft" />
       <option name="ENV_FILES" value="" />
@@ -160,7 +206,13 @@
     <list>
       <item itemvalue="Python.pydoc" />
       <item itemvalue="Python tests.pytest" />
+      <item itemvalue="Python tests.pytest for test_disjoint_sets.test_four_triangles" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_disjoint_sets.test_four_triangles" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -179,13 +231,31 @@
       <option name="presentableId" value="Default" />
       <updated>1718108171495</updated>
       <workItem from="1718108172891" duration="10565000" />
+      <workItem from="1718122104368" duration="5412000" />
+      <workItem from="1718127532377" duration="10079000" />
+      <workItem from="1718146243503" duration="620000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit, add 'connected components' and tests">
+      <option name="closed" value="true" />
+      <created>1718122198147</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718122198147</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit, add 'connected components' and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit, add 'connected components' and tests" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/fikklish_uft$pytest.coverage" NAME="pytest Coverage Results" MODIFIED="1718127828370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/fikklish_uft$pytest_for_test_disjoint_sets_test_four_triangles.coverage" NAME="pytest for test_disjoint_sets.test_four_triangles Coverage Results" MODIFIED="1718136309355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/fikklish_uft$pydoc.coverage" NAME="pydoc Coverage Results" MODIFIED="1718117400590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/fikklish_uft$pytest_for_pytest.coverage" NAME="pytest Coverage Results" MODIFIED="1718121517225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
