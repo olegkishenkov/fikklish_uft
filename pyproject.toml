@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "cusenbers-ult"
+version = "0.1.0"
+description = ""
+authors = ["oleg <oleg_kishenkov@mail.ru>"]
+readme = "README.md"
+package-mode = true
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
